@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable, Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,6 @@ export class AppComponent {
   aaa() {
     var count = 0;
     var button = document.querySelector('button');
-    button.addEventListener('click', () => console.log(`Clicked ${++count} times`))
-
-    
+    button.addEventListener('click', () => console.log(`Clicked ${++count} times`));
   }
 }
